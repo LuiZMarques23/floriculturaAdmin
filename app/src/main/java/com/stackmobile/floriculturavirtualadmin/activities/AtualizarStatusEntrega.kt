@@ -31,6 +31,12 @@ class AtualizarStatusEntrega : AppCompatActivity() {
             }
         }
 
+        binding.btStatusEmPreparcao.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked){
+                status_entrega = "Status de Entrega: Em Preparação"
+            }
+        }
+
         binding.btAtualizarStatusEntrega.setOnClickListener {
 
                 db.atualizarStatusPedidoUsuario(
