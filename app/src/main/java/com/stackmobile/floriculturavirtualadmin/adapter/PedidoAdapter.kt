@@ -43,6 +43,8 @@ class PedidoAdapter(private val context: Context, private val listaPedidos: Muta
             holder.txtStatusEntrega.setTextColor(Color.parseColor("#FF9800"))
         }else if (holder.txtStatusEntrega.text.equals("Status de Entrega: Entregue")){
             holder.txtStatusEntrega.setTextColor(Color.parseColor("#8BC34A"))
+        }else if (holder.txtStatusEntrega.text.equals("Status de Entrega: Em Preparção")){
+            holder.txtStatusEntrega.setTextColor(Color.parseColor("#FFFF00"))
         }
 
     }

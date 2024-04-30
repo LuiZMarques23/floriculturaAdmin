@@ -33,6 +33,14 @@
             android:layout_margin="20dp">
 
             <RadioButton
+                android:id="@+id/btStatusEmPreparcao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Em Preparação"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <RadioButton
                 android:id="@+id/btStatusEntrega1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
