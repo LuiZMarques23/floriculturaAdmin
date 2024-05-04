@@ -1,8 +1,11 @@
 package com.stackmobile.floriculturavirtualadmin.activities
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
 import com.stackmobile.floriculturavirtualadmin.databinding.ActivityAtualizarStatusEntregaBinding
 import com.stackmobile.floriculturavirtualadmin.datasource.DB
 
@@ -46,6 +49,8 @@ class AtualizarStatusEntrega : AppCompatActivity() {
         }
 
             binding.btAtualizarStatusEntrega.setOnClickListener {
+
+                Toast.makeText(this,"Sucesso atualizar status!",Toast.LENGTH_SHORT).show()
 
                 db.atualizarStatusPedidoUsuario(
                     status_entrega,
