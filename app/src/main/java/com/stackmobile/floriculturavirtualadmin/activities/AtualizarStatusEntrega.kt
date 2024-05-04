@@ -20,24 +20,31 @@ class AtualizarStatusEntrega : AppCompatActivity() {
         val usuarioID = intent.extras?.getString("usuarioID").toString()
 
         binding.btStatusEntrega1.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked){
+            if (isChecked) {
                 status_entrega = "Status de Entrega: Em Trânsito"
             }
         }
 
         binding.btStatusEntrega2.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked){
+            if (isChecked) {
                 status_entrega = "Status de Entrega: Entregue"
             }
         }
 
         binding.btStatusEmPreparcao.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked){
+            if (isChecked) {
                 status_entrega = "Status de Entrega: Em Preparação"
+            }
+
+        }
+
+        binding.btStatusDisponivel.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
+                status_entrega = "Status de Entrega: Pedido Disponivel Retirada Loja "
             }
         }
 
-        binding.btAtualizarStatusEntrega.setOnClickListener {
+            binding.btAtualizarStatusEntrega.setOnClickListener {
 
                 db.atualizarStatusPedidoUsuario(
                     status_entrega,
@@ -50,6 +57,6 @@ class AtualizarStatusEntrega : AppCompatActivity() {
                     this
                 )
 
+            }
         }
     }
-}

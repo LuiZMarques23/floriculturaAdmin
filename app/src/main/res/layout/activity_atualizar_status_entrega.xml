@@ -44,7 +44,15 @@
                 android:id="@+id/btStatusEntrega1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Em Trânsito"
+                android:text="Em Trânsito "
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/btStatusDisponivel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pedido Disponivel Retirada "
                 android:textSize="18sp"
                 android:textStyle="bold"/>
 
