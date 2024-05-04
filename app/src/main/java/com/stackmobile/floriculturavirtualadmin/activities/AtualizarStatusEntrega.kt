@@ -1,7 +1,8 @@
 package com.stackmobile.floriculturavirtualadmin.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.stackmobile.floriculturavirtualadmin.databinding.ActivityAtualizarStatusEntregaBinding
 import com.stackmobile.floriculturavirtualadmin.datasource.DB
 
